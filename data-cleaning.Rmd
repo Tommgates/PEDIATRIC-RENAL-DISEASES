@@ -1,0 +1,13 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r load-libraries}
+library(tidyverse)
+library(janitor)
+```
+
+```{r load-data}
+data<-read.csv("data/data.csv") %>% clean_names()
+```
+
